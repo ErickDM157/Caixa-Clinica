@@ -1,0 +1,295 @@
+:root{
+    --bg-color: #e5daca;
+    --box-color: #BAA898;
+    --sub-box-color: #848586;
+    --hover-sub-box-color: #527f76;
+    --txt-color: #3b0105;
+    --buttom-color: #C2847A;
+    --hover-buttom-color: #c2675a;
+    --input-color: #ffffff;
+    --box-shadow: rgba(0, 0, 0, 0.5);
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    padding: 0;
+    margin: 0;
+    font-family: "Nova Round", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+}
+h2{
+    color: var(--txt-color);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+h3{
+    text-align: center;
+    width: 100%; 
+    padding-top: 25px;
+    font-size: 22px;
+}
+.box {
+    background-color: var(--box-color);
+    width: 1040px;
+    height: 300px;
+    border-radius: 30px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10vh;
+    box-shadow: 1.5px 2px 5px var(--box-shadow);
+}
+.box2{
+    background-color: var(--box-color);
+    width: 620px;
+    height: 300px;
+    border-radius: 30px;
+    text-align: center;
+}
+.RS{
+   top: 10px;
+}
+.select {
+    background-color: var(--sub-box-color);
+    width: 420px;
+    height: 300px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Valor{
+    margin-top: 50px;
+    box-shadow: 1px 1px 3px var(--box-shadow);
+    height: 25px;
+    border: 0px;
+    border-radius: 6px;
+    transform: translateY(-3px);
+    padding-left: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: "Nova Round", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+.Valor:hover{
+    border: 1px solid var(--txt-color);
+}
+.paga-box{
+    box-shadow: 1px 1px 3px var(--box-shadow);
+    height: 25px;
+    border: 0px;
+    border-radius: 6px;
+    transform: translateY(-3px);
+    padding-left: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: "Nova Round", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+.paga-box:hover{
+    border: 1px solid var(--txt-color);
+}
+.paga-text:hover{
+    border: 1px solid var(--txt-color);
+}
+.paga-text{
+    box-shadow: 1px 1px 3px var(--box-shadow);
+    height: 25px;
+    border: 0px;
+    border-radius: 6px;
+    transform: translateY(-3px);
+    padding-left: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: "Nova Round", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    width: 300px;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.radio {
+    display: flex;
+}
+
+.radio-box {
+    display: flex;
+    width: 100%; 
+}
+#radio-box-pagamentos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 60px;
+}
+.radio-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px; 
+}
+#radio-column-pagamentos {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 10px; 
+}
+
+.radio-column label {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 30px; 
+    cursor: pointer;
+}
+
+.radio-column input {
+    margin-right: 8px; 
+}
+.radio-column input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--bg-color);
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.radio-column input[type="radio"]:checked {
+    background-color: var(--bg-color);
+    border: 6px solid var(--hover-buttom-color);
+    &.dark{
+        background-color: var(--bg-color);
+        border: 6px solid var(--sub-box-color);
+    }
+}
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; 
+}
+button {
+    background-color: var(--buttom-color);
+    font-size: 22px;
+    border: 1px solid var(--buttom-color);
+    box-shadow: 1.5px 1.5px 5px var(--box-shadow);
+    color: var(--txt-color);
+    padding: 2px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0; 
+    font-family: "Nova Round", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    transition: transform 0.15s ease-in-out, background-color 0.2s ease-in-out;
+    
+}
+button:hover{
+    background-color: var(--hover-buttom-color);
+    transform: scaleX(115%) scaleY(115%);
+    animation: 2s ease-in-out;
+}
+.seta{
+    position: absolute;
+}
+.seta img{
+    width: 50px;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.text-despesas{
+    width: 320px;
+    height: 150px;
+    border-radius: 20px;
+    border: 1px dashed var(--txt-color);
+    resize: none; 
+    padding-left: 10px; 
+    padding-top: 10px;
+    overflow-wrap: break-word;
+    white-space: pre-wrap; 
+    font-family: "Nova Round", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    box-shadow: 1.5px 2px 5px var(--box-shadow);
+}
+#radio-column-consulta{
+    width: 500px;
+    margin-left: 75px;
+}
+.date-column-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date-column{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    align-items: center;
+}
+#radio-column-tipo-consulta{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+#select-consulta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.consulta-result-box {
+    color: var(--txt-color);
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.consulta-result {
+    background-color: var(--sub-box-color);
+    color: var(--txt-color);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1.5px 2px 5px var(--box-shadow);
+    width: 1100px;
+    font-size: 30px;
+}
+.consulta-result input{
+    transform: scaleX(200%) scaleY(200%);
+    margin-right: 14px;
+}
+.alert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alert-img{
+    width: 28px;
+    height: auto;
+    transform: translateY(12px);
+}
+.confirm{
+    width: 500px;
+}

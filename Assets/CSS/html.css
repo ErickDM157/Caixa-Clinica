@@ -1,0 +1,104 @@
+:root{
+    --bg-color: #e5daca;
+    --box-color: #BAA898;
+    --sub-box-color: #848586;
+    --hover-sub-box-color: #527f76;
+    --txt-color: #3b0105;
+    --buttom-color: #C2847A;
+    --hover-buttom-color: #c2675a;
+    --input-color: #ffffff;
+    --box-shadow: rgba(0, 0, 0, 0.5);
+}
+.font-playball-regular {
+    font-family: "Playball", cursive;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+}  
+.font-oleo-script-regular {
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.font-oleo-script-bold {
+    font-family: "Oleo Script", system-ui;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+body{
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-family: "Nova Round", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+}
+h2{
+    color: var(--buttom-color);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.box {
+    background-color: var(--box-color);
+    width: 1040px;
+    height: 340px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 1.5px 2px 5px var(--box-shadow);
+}
+.txt-box{
+    font-family: "Oleo Script", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.select {
+    background-color: var(--sub-box-color);
+    width: 230px;
+    height: 215px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    box-shadow: 1.5px 2px 5px var(--box-shadow);
+}
+.select:hover{
+    background-color: var(--hover-sub-box-color);
+    transform: scaleX(110%) scaleY(110%);
+    animation: 2s ease-in-out;
+ 
+}
+a{
+    text-decoration: none;
+    color: inherit;        
+}
+a h4 {
+    text-align: center;
+    padding-top: 5px;    
+}
+.select:nth-of-type(1) h4{
+    padding-top: 0px;
+}
+.icon-box{
+    width: 90px;
+    height: 85px;
+    padding-top: 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.select:nth-of-type(1) img{
+    width: 100px;
+    height: 95px;
+}
